@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.min.css" />
+    <title>Portfolio | js</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body id="body">
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="" class="modalImg w-100 rounded-2 mb-3" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
+              maxime quam architecto quo inventore harum ex magni, dicta
+              impedit.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              ok
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="boody">
+      <header>
+        <div class="container">
+          <a href="#" class="logo">
+            <h1>Ecommerce</h1>
+          </a>
+          <nav>
+            <i id="hamBurger" class="fas fa-bars toggle-menu"></i>
+            <ul id="navUl">
+              <li class="active lii"><a href="#Home">Home</a></li>
+              <li class="lii"><a href="#services">Services</a></li>
+              <li class="lii"><a href="#portfolio">Portfolio</a></li>
+              <li class="lii"><a href="#about">About</a></li>
+              <li class="lii"><a href="#team">Team</a></li>
+              <li class="lii"><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div id="header" class="header">
+        <div class="container">
+          <div class="top-text">Welcome To Our Studio!</div>
+          <div class="botn-text">IT'S NICE TO MEET YOU</div>
+          <button id="services"><a href="#services">TELL ME MORE</a></button>
+        </div>
+      </div>
+
+      <!-- Adding new sections -->
+      <section id="services">
+        <div class="container">
+          <h2>SERVICES</h2>
+          <p class="titel">Details about the services we offer.</p>
+          <div class="big-box">
+            <div class="ecomers">
+              <span> <i class="fa-solid fa-cart-shopping"></i> </span>
+              <h4>E-Commerce</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
+                maxime quam architecto quo inventore harum ex magni, dicta
+                impedit.
+              </p>
+            </div>
+            <div class="ecomers">
+              <span> <i class="fa-solid fa-laptop"></i> </span>
+              <h4>Responsive Design</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
+                maxime quam architecto quo inventore harum ex magni, dicta
+                impedit.
+              </p>
+            </div>
+            <div class="ecomers">
+              <span><i class="fa-solid fa-lock"></i> </span>
+              <h4>Web Security</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
+                maxime quam architecto quo inventore harum ex magni, dicta
+                impedit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <div class="container">
+          <h2>Portfolio</h2>
+          <p>Some of our recent projects.</p>
+          <div class="big-box-img">
+            <div class="boxs-img">
+              <div
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="img"
+              >
+                <img src="./image/Portfolio.jpg" alt="" />
+              </div>
+              <div class="text-img">
+                <h3>Threads</h3>
+                <p>Illustration</p>
+              </div>
+            </div>
+            <div class="boxs-img">
+              <div
+                class="img"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <img src="./image/Portfolio (2).jpg" alt="" />
+              </div>
+              <div class="text-img">
+                <h3>Explore</h3>
+                <p>Graphic Design</p>
+              </div>
+            </div>
+            <div class="boxs-img">
+              <div
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="img"
+              >
+                <img src="./image/Portfolio (3).jpg" alt="" />
+              </div>
+              <div class="text-img">
+                <h3>Window</h3>
+                <p>Photography</p>
+              </div>
+            </div>
+            <div class="boxs-img">
+              <div
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="img"
+              >
+                <img src="./image/Portfolio (4).jpg" alt="" />
+              </div>
+              <div class="text-img">
+                <h3>Finish</h3>
+                <p>Identity</p>
+              </div>
+            </div>
+            <div class="boxs-img">
+              <div
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="img"
+              >
+                <img src="./image/Portfolio (5).jpg" alt="" />
+              </div>
+              <div class="text-img">
+                <h3>Lines</h3>
+                <p>Branding</p>
+              </div>
+            </div>
+            <div class="boxs-img">
+              <div
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="img"
+              >
+                <img src="./image/Portfolio (6).jpg" alt="" />
+              </div>
+              <div class="text-img">
+                <h3>Southwest</h3>
+                <p>Southwest</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <h2>About Us</h2>
+          <p>Information about our company.</p>
+          <div class="time-line">
+            <div class="containet-box left-containet">
+              <img src="./image/abut.jpg" />
+              <div class="text-box text-box-left">
+                <h4>2009-2011</h4>
+                <small>Our Humble Beginnings</small>
+                <p class="p-time-line p-left">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+                  ut voluptatum eius sapiente, totam reiciendis temporibus qui
+                  quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
+                  dolore laudantium consectetur!
+                </p>
+              </div>
+            </div>
+            <div class="containet-box right-containet">
+              <img src="./image/abut (2).jpg" />
+              <div class="text-box text-box-right">
+                <h4>2009-2011</h4>
+                <small>Our Humble Beginnings</small>
+                <p class="p-time-line p-right">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+                  ut voluptatum eius sapiente, totam reiciendis temporibus qui
+                  quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
+                  dolore laudantium consectetur!
+                </p>
+              </div>
+            </div>
+            <div class="containet-box left-containet">
+              <img src="./image/abut (3).jpg" />
+              <div class="text-box text-box-left">
+                <h4>2009-2011</h4>
+                <small>Our Humble Beginnings</small>
+                <p class="p-time-line p-left">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+                  ut voluptatum eius sapiente, totam reiciendis temporibus qui
+                  quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
+                  dolore laudantium consectetur!
+                </p>
+              </div>
+            </div>
+            <div class="containet-box right-containet">
+              <img src="./image/abut (4).jpg" />
+              <div class="text-box text-box-right">
+                <h4>2009-2011</h4>
+                <small>Our Humble Beginnings</small>
+                <p class="p-time-line p-right">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+                  ut voluptatum eius sapiente, totam reiciendis temporibus qui
+                  quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
+                  dolore laudantium consectetur!
+                </p>
+              </div>
+            </div>
+            <div class="containet-box right-containet">
+              <div class="img-text"><h3>Be Part Of Our Story!</h3></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="team">
+        <div class="container">
+          <h2>Our Team</h2>
+          <p>Meet our team members.</p>
+          <div class="boxs-team">
+            <div class="team">
+              <img src="./image/team.jpg" />
+              <div class="text-team">
+                <h4>Parveen Anand</h4>
+                <p>Lead Designer</p>
+              </div>
+              <div class="icons">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+            </div>
+            <div class="team">
+              <img src="./image/team (2).jpg" />
+              <div class="text-team">
+                <h4>Diana Petersen</h4>
+                <p>Lead Marketer</p>
+              </div>
+              <div class="icons">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+            </div>
+            <div class="team">
+              <img src="./image/team (3).jpg" />
+              <div class="text-team">
+                <h4>Larry Parker</h4>
+                <p>Lead Developer</p>
+              </div>
+              <div class="icons">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+            </div>
+          </div>
+          <p class="p-out">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque,
+            laboriosam veritatis, quos non quis ad perspiciatis, totam corporis
+            ea, alias ut unde.
+          </p>
+        </div>
+      </section>
+
+      <div class="logos">
+        <img src="./image/microsoft.svg" />
+        <img src="./image/google.svg" />
+        <img src="./image/facebook.svg" />
+        <img src="./image/ibm.svg" />
+      </div>
+
+      <section id="contact">
+        <div class="container">
+          <h2 class="h2-contacts">CONTACT US</h2>
+          <p>How to get in touch with us.</p>
+          <div class="contact">
+            <div class="inpot">
+              <input type="text" placeholder="Your Name" id="" />
+              <input
+                class=""
+                type="email"
+                placeholder="Your Email"
+                id="email"
+              />
+              <input type="number" placeholder="Your Phone" id="Phone" />
+            </div>
+            <textarea placeholder="Your Message" id=""></textarea>
+          </div>
+          <button>SEND MESAGE</button>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 My Website</p>
+      <div class="icons">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <p>Privacy Policy <span>Terms of Use</span></p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
